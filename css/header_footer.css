@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+body {
+    font-family: "教科書体", YuMincho, "serif";
+}
+
+/* ここから header 部分 */
+/* ヘッダー全体のデザイン */
+header {
+    background-color: #72635a;
+    padding: 15px 25px;
+    animation: gradientShift 8s infinite;
+}
+
+header a {
+    color: #ffffff;
+}
+
+/*メニューの横並び表示*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu img {
+    border-radius: 8px;
+}
+
+/* ナビゲーションメニュー */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* 各メニュー項目 */
+nav ul li {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#index,
+#old,
+#about,
+#subscript,
+#contact {
+    text-decoration: none;
+    font-size: 17px;
+    padding: 1px 3px;
+    border: 2px solid #0f0f0f;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ホバー時の効果 */
+#index:hover,
+#old:hover,
+#about:hover,
+#subscript:hover,
+#contact:hover {
+    color: #66c5f4;
+}
+
+/* ここまで header 部分 */
+
+footer {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer iframe {
+    width: 100%;
+    height: auto;
+    border: none;
+    overflow: hidden;
+}

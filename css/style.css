@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    line-height: 1.7;
+    background-color: #eddfd7;
+}
+
+/* レイアウト */
+main {
+    inline-size: 80%;
+    margin: 3rem auto 4rem;
+}
+
+main h1 {
+    margin-block-end: 10px;
+    font-size: 1.8em;
+    color: #72635a;
+}
+
+main h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-block-end: 15px;
+    color: #72635a;
+}
+
+main h3 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-block-end: 5px;
+    color: #1a9bd1;
+}
+
+/*ここから old.html にかかわる内容 */
+/* 「活動報告トップページへ戻る」のリンクデザイン */
+#ToReport {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ホバー時の効果 */
+#ToReport:hover {
+    background-color: deepskyblue; /* 景色を変更 */
+    color: white; /* 文字色を維持 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 軽い影を追加 */
+}
+
+
+.calendar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.month {
+    inline-size: 45%;
+}
+
+.month h3 {
+    border-block-end: 1px solid #000;
+    padding-block-end: 5px;
+}
+
+.events {
+    list-style: none;
+    padding-inline-start: 20px;
+}
+
+.events li {
+    margin-block-end: 10px;
+}
+
+/* ここまで */
